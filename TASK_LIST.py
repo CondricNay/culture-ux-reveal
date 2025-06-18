@@ -1,3 +1,8 @@
+STUDY_NAME = "Culture UX Study 1"
+
+WEBSITE_URL_1 = "https://www.figma.com/proto/tSeCgY5BvAH9BGH9HbXcKn/ICID-state_of_the_art-Austria-V0.1?node-id=1-75&starting-point-node-id=1%3A75&disable-default-keyboard-nav=1&device-frame=0&scaling=min-zoom&hide-ui=1"
+
+
 PRE_EXPERIMENT_TEXT = """
 Read this before you start the experiment:
 
@@ -13,8 +18,6 @@ PRE_EXPERIMENT_BUTTON_TEXT = "I understand"
 TASK1_TEXT = "Task 1: Find out the minimum age to acquire a Global ID."
 
 TASK_START_TEXT = "Start the task"
-
-UI_WEBSITE_1 = "https://www.figma.com/proto/tSeCgY5BvAH9BGH9HbXcKn/ICID-state_of_the_art-Austria-V0.1?node-id=1-75&starting-point-node-id=1%3A75&disable-default-keyboard-nav=1&device-frame=0&scaling=min-zoom&hide-ui=1"
 
 TASK2_TEXT = "Task 2: Find out how much it costs to use Global ID."
 
