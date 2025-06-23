@@ -1,4 +1,4 @@
-STUDY_NAME = "Culture UX Study 1"
+STUDY_NAME = "Culture UX Study"
 
 WEBSITE_URL_1 = "https://www.figma.com/proto/tSeCgY5BvAH9BGH9HbXcKn/ICID-state_of_the_art-Austria-V0.1?node-id=1-75&starting-point-node-id=1%3A75&disable-default-keyboard-nav=1&device-frame=0&scaling=min-zoom&hide-ui=1"
 
