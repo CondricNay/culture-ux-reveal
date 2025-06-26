@@ -8,7 +8,6 @@ class TaskAction:
     def execute(self, driver):
         raise NotImplementedError()
 
-
 class AddTextTask(TaskAction):
     def __init__(self, text, button_label):
         self.text = text
