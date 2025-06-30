@@ -52,6 +52,9 @@ class StudyManager():
 
     # TODO add delete by id
     def delete_recent_study(self):
+        """
+        Pre-condition: the study exists
+        """
         self.open_website("https://uxreveal.tobii.com/en/studies/open")
         time.sleep(1)
 
@@ -72,6 +75,9 @@ class StudyManager():
     # TODO also check the edit button in "https://uxreveal.tobii.com/en/studies/active" if this doesn't work
     # Note: This works by clearing all the old tasks, then adding the new tasks  #TODO implement task clearing
     def edit_recent_study(self, task_pipeline: list[TaskAction]):
+        """
+        Pre-condition: the study exists and the tasks are empty
+        """
         self.open_website("https://uxreveal.tobii.com/en/studies/open")
         time.sleep(1)
 
@@ -90,6 +96,9 @@ class StudyManager():
 
     # TODO by ID
     def start_new_data_collection(self):
+        """
+        Pre-condition: the study exists and the tasks are NOT empty
+        """
         self.open_website("https://uxreveal.tobii.com/en/studies/open")
         
         try:

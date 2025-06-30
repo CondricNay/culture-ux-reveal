@@ -1,1 +1,0 @@
-task_order = ['TASK2_TEXT', 'TASK4_TEXT', 'TASK6_TEXT', 'TASK1_TEXT']
