@@ -2,21 +2,32 @@ import json
 import yaml
 from task_actions import AddTextTask, AddWebTask
 
-# Load YAML
-with open("task_list.yaml", "r", encoding="utf-8") as f:
-    TASK_LIST = yaml.safe_load(f)
-
+# TODO fix the headings (eg. system 1 task 1) to not be randomized
+# TODO fix figma to have 2 versions (2 systems)
+# TODO add questions after each figma
+# TODO cleanup this function
 def build_task_pipeline(used_order="task_order"):
-    with open("task_order.json", "r") as f:
+    # Load task order JSON
+    with open("task_order.json", "r", encoding="utf-8") as f:
         data = json.load(f)
         task_order = data[used_order]
 
-    # Rotate task list
+    # Rotate the task list
     task_order = task_order[1:] + task_order[:1]
+    data[used_order] = task_order  # update only the selected list
 
-    # Save rotated task order
-    with open("task_order.json", "w") as f:
-        json.dump({"task_order": task_order}, f, indent=2)
+    # Save updated task order back to JSON
+    with open("task_order.json", "w", encoding="utf-8") as f:
+        json.dump(data, f, indent=2)
+
+    if used_order == "task_order_jp":
+        task_list_yaml = "task_list_jp.yaml"
+    else:
+        task_list_yaml = "task_list.yaml"
+
+    # Load task list YAML
+    with open(task_list_yaml, "r", encoding="utf-8") as f:
+        TASK_LIST = yaml.safe_load(f)
 
     # Build pipeline
     task_pipeline = [
@@ -30,6 +41,9 @@ def build_task_pipeline(used_order="task_order"):
         task_pipeline.append(AddTextTask(TASK_LIST[name], TASK_LIST["TASK_START_TEXT"]))
         task_pipeline.append(AddWebTask(website_url))
 
-    task_pipeline.append(AddTextTask(TASK_LIST["POST_EXPERIMENT_TEXT"], "Done"))
+    task_pipeline.append(AddTextTask(TASK_LIST["POST_EXPERIMENT_TEXT"], TASK_LIST["POST_EXPERIMENT_BUTTON_TEXT"]))
 
     return task_pipeline
+
+def build_task_pipeline_japanese():
+    return build_task_pipeline("task_order_jp")

@@ -52,6 +52,7 @@ class StudyManager():
 
         except NoSuchElementException:
             print("Error: Can't create new study.")
+            input(1000)     # TODO handle
             sys.exit()
 
     # TODO add delete by id

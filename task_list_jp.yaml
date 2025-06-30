@@ -1,2 +1,69 @@
-{
-}
+STUDY_NAME: Culture UX Study
+
+WEBSITE_URL: "https://www.figma.com/proto/tSeCgY5BvAH9BGH9HbXcKn/ICID-state_of_the_art-Austria-V0.1?node-id=1-75&starting-point-node-id=1%3A75&disable-default-keyboard-nav=1&device-frame=0&scaling=min-zoom&hide-ui=1"
+
+PRE_EXPERIMENT_TEXT: |
+  実験を開始する前に、以下をお読みください：
+
+  1) キャリブレーションのレベルが 0% の場合は、実験を再起動してください。
+
+  2) タスクを完了したら、「Esc」キーを押して次のタスクに進んでください。
+
+  3) 実験中に目を閉じたり長時間視線をそらしたりしないでください。アイトラッカーが瞳を認識できなくなる可能性があります。
+
+PRE_EXPERIMENT_BUTTON_TEXT: 理解しました
+
+INTRODUCTION_TEXT: |
+  導入
+  このテストでは、新しいデジタル パスポート「Global ID」を取得しようとしている人物を演じます。Global ID は、スマートフォンで使用できる国民 ID と旅行パスポートのデジタル版です。このテストでは、Global ID の申請に関する情報を探します。
+
+  このテストでは、2 つの異なるシステムを評価していただきます。各システムで、2 つのタスクを実行し、その後に評価アンケートに回答していただきます。
+
+  このテストを実行するには、この Web サイトのステップバイステップの指示に従うだけです。
+
+  続行するには、「次へ」を押してください。
+
+INTRODUCTION_BUTTON_TEXT: 次へ
+
+TASK1_TEXT: |
+  システム 1、タスク 1
+  「Application Status Inquiry Service」(Global ID申請の状況を確認するためのウェブページ) を開きます。
+
+  緑色の成功ページが表示されたら、タスクは完了です。
+
+  検索機能は使用しないでください。
+
+TASK2_TEXT: |
+  システム 1、タスク 2
+  Global ID を取得するには何歳以上である必要がありますか?
+
+  下の欄に最低年齢を入力してください。
+
+  情報はホームページに掲載されています。
+
+  検索機能は使用しないでください。
+
+TASK4_TEXT: |
+  システム 2、タスク 1
+  Global ID の使用にはいくらかかりますか?
+
+  下のフィールドに金額を数字で入力してください。
+
+  情報はホームページに掲載されています。
+
+  検索機能は使用しないでください。
+
+TASK6_TEXT: |
+  システム 2、タスク 2
+  「Find Local Authority」ページを開きます。
+
+  緑色の成功ページが表示されたら、タスクは完了です。
+
+  検索機能は使用しないでください。
+
+TASK_START_TEXT: タスクを開始する。
+
+POST_EXPERIMENT_TEXT: |
+  ユーザビリティ テストは終了しました。テクノロジーを誰もがより利用しやすいものにするためにご協力いただき、誠にありがとうございました。
+
+POST_EXPERIMENT_BUTTON_TEXT: 終了。

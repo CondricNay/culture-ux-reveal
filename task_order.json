@@ -4,5 +4,11 @@
     "TASK6_TEXT",
     "TASK1_TEXT",
     "TASK2_TEXT"
+  ],
+  "task_order_jp": [
+    "TASK4_TEXT",
+    "TASK6_TEXT",
+    "TASK1_TEXT",
+    "TASK2_TEXT"
   ]
 }
