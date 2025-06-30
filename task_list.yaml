@@ -1,0 +1,36 @@
+STUDY_NAME: Culture UX Study
+
+WEBSITE_URL: "https://www.figma.com/proto/tSeCgY5BvAH9BGH9HbXcKn/ICID-state_of_the_art-Austria-V0.1?node-id=1-75&starting-point-node-id=1%3A75&disable-default-keyboard-nav=1&device-frame=0&scaling=min-zoom&hide-ui=1"
+
+INSTRUCTION: ""
+
+PRE_EXPERIMENT_TEXT: |
+  Read this before you start the experiment:
+
+  1) Please restart the experiment if the calibration level is 0%.
+
+  2) When you completed the task, press "Esc" to continue to the next task.
+
+  3) Don't close your eyes/look away for too long during the experiment, the eye tracker might not recognize your pupils.
+
+PRE_EXPERIMENT_BUTTON_TEXT: I understood
+
+INTRODUCTION_TEXT: |
+  Introduction
+  In this test you will represent a person trying to get the new digital passport “Global ID”. Global ID is a digital variant of your national ID and travel passport, which you can use on your smartphone. In this test you want to find information about applying for the Global ID.
+
+  In this test you will evaluate two different systems. Each system is tested by performing 2 tasks followed by an evaluation questionnaire.
+
+  To perform this test, just follow the instructions by clicking through this website's step-by-step directions.
+
+  To continue, please press “Next”.
+
+INTRODUCTION_BUTTON_TEXT: Next
+
+TASK1_TEXT: "Task 1: Find out the minimum age to acquire a Global ID."
+TASK2_TEXT: "Task 2: Find out how much it costs to use Global ID."
+TASK4_TEXT: "Task 4: Open the Application Status Inquiry Service"
+TASK6_TEXT: "Task 6: Find the “Find Local Authority” page"
+
+TASK_START_TEXT: Start the task
+POST_EXPERIMENT_TEXT: The experiment is completed, thank you for participating.

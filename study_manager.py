@@ -1,17 +1,21 @@
 import sys
 import time
+import yaml
 
 from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import Select
 
 from task_actions import TaskAction
-import TASK_LIST
 
 # TODO check no study for CRUD (no C)
 
 USERNAME = "naytitorn21@gmail.com"
 PASSWORD = "TobiiPassword0!"            # Password Specific - OK for public use
+
+with open("task_list.yaml", "r", encoding="utf-8") as f:
+    TASK_LIST = yaml.safe_load(f)
+    STUDY_NAME = TASK_LIST["STUDY_NAME"]
 
 class StudyManager():
     def __init__(self, driver):
@@ -30,7 +34,7 @@ class StudyManager():
             # Username field not found — probably already logged in
             pass
 
-    def create_study(self):
+    def create_study(self, study_name=STUDY_NAME):
         self.open_website("https://uxreveal.tobii.com/en/studies/index")
 
         try: 
@@ -38,7 +42,7 @@ class StudyManager():
             new_study_link.click()
 
             new_study_title_field = self.driver.find_element(By.ID, "tourStudyTitleLabel")
-            new_study_title_field.send_keys(TASK_LIST.STUDY_NAME)
+            new_study_title_field.send_keys(study_name)
 
             new_study_participant_dropdown = Select(self.driver.find_element(By.ID, "StudyNumberParticipants"))
             new_study_participant_dropdown.select_by_value("3")
