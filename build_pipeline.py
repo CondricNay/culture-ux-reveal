@@ -2,11 +2,10 @@ import json
 import yaml
 from task_actions import AddTextTask, AddWebTask, AddQuestionTask
 
-def get_task_order():
+def get_task_order_latin_square():
     pass
 
 # TODO fix the headings (eg. system 1 task 1) to not be randomized
-# TODO add questions after each figma
 # TODO cleanup this function
 def build_task_pipeline(used_order="task_order"):
     # Load task order JSON
@@ -38,16 +37,15 @@ def build_task_pipeline(used_order="task_order"):
     ]
 
     # Build tasks from the task_order list of dicts
-    for task in task_order:
-        task_text = TASK_LIST[task["TEXT"]]
-        task_url = TASK_LIST[task["WEBSITE_URL"]]
+    for task_id in task_order:
+        task_data = TASK_LIST[task_id]
 
-        task_pipeline.append(AddTextTask(task_text, TASK_LIST["TASK_START_TEXT"]))
-        task_pipeline.append(AddWebTask(task_url))
-        
-        if "QUESTION" in task:
-            task_question = TASK_LIST[task["QUESTION"]]
-            task_pipeline.append(AddQuestionTask(task_question, TASK_LIST["QUESTION_BUTTON_TEXT"]))
+        task_pipeline.append(AddTextTask(task_data["TEXT"], TASK_LIST["TASK_START_TEXT"]))
+        task_pipeline.append(AddWebTask(task_data["WEBSITE_URL"]))
+
+        if "QUESTION" in task_data:
+            task_pipeline.append(AddQuestionTask(task_data["QUESTION"], TASK_LIST["QUESTION_BUTTON_TEXT"]))
+
 
     task_pipeline.append(AddTextTask(TASK_LIST["POST_EXPERIMENT_TEXT"], TASK_LIST["POST_EXPERIMENT_BUTTON_TEXT"]))
 

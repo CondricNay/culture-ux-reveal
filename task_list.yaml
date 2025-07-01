@@ -23,57 +23,55 @@ INTRODUCTION_TEXT: |
 
 INTRODUCTION_BUTTON_TEXT: Next
 
-TASK1_TEXT: |
-  System 1, Task 1
-  Open the “Find Local Authority” page.
+TASK1:
+  TEXT: |
+    System 1, Task 1
+    Open the “Find Local Authority” page.
 
-  As soon as you see the green success page, your task is complete.
+    As soon as you see the green success page, your task is complete.
 
-  Please do not use any search feature.
+    Please do not use any search feature.
+  WEBSITE_URL: https://www.figma.com/proto/q5wKb0RkMaWBuJiOi6zWsz/ICID-state_of_the_art-Austria-V0.1-Task_LAP?t=zsg3rl4Hu10Ynd3L-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&node-id=1-75&starting-point-node-id=1%3A75&hide-ui=1
 
-TASK1_WEBSITE_URL: https://www.figma.com/proto/q5wKb0RkMaWBuJiOi6zWsz/ICID-state_of_the_art-Austria-V0.1-Task_LAP?t=zsg3rl4Hu10Ynd3L-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&node-id=1-75&starting-point-node-id=1%3A75&hide-ui=1
+TASK2:
+  TEXT: |
+    System 1, Task 2
+    How much does it cost to use Global ID?
 
-TASK2_TEXT: |
-  System 1, Task 2
-  How much does it cost to use Global ID?
+    Enter the amount as number into the field below.
 
-  Enter the amount as number into the field below.
+    The information is located on the home page.
 
-  The information is located on the home page.
+    Please do not use any search feature.
+  WEBSITE_URL: https://www.figma.com/proto/tSeCgY5BvAH9BGH9HbXcKn/ICID-state_of_the_art-Austria-V0.1?node-id=1-75&node-type=canvas&t=LrffAWufeJaZKZyO-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A75&hide-ui=1
+  QUESTION: Euro per month to use Global ID
 
-  Please do not use any search feature.
+TASK4:
+  TEXT: |
+    System 2, Task 1
+    Open the “Application Status Inquiry Service” (webpage to check the status of your Global ID application).
 
-TASK2_WEBSITE_URL: https://www.figma.com/proto/tSeCgY5BvAH9BGH9HbXcKn/ICID-state_of_the_art-Austria-V0.1?node-id=1-75&node-type=canvas&t=LrffAWufeJaZKZyO-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A75&hide-ui=1
+    As soon as you see the green success page, your task is complete.
 
-TASK2_QUESTION_TEXT: Euro per month to use Global ID
+    Please do not use any search feature.
+  WEBSITE_URL: https://www.figma.com/proto/BJdSnhD42OwTMkuUSTneHx/ICID-state_of_the_art-Austria-3col-V0.1-Task_ASIS?node-id=1-75&node-type=canvas&t=jg7RlIHXGu39qW0N-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A75&hide-ui=1
 
-QUESTION_BUTTON_TEXT: Enter
+TASK6:
+  TEXT: |
+    System 2, Task 2
+    How old do you have to be to get a Global ID?
 
-TASK4_TEXT: |
-  System 2, Task 1
-  Open the “Application Status Inquiry Service” (webpage to check the status of your Global ID application).
+    Please enter the minimum age into the field below.
 
-  As soon as you see the green success page, your task is complete.
+    The information is located on the home page.
 
-  Please do not use any search feature.
-
-TASK4_WEBSITE_URL: https://www.figma.com/proto/BJdSnhD42OwTMkuUSTneHx/ICID-state_of_the_art-Austria-3col-V0.1-Task_ASIS?node-id=1-75&node-type=canvas&t=jg7RlIHXGu39qW0N-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A75&hide-ui=1
-
-TASK6_TEXT: |
-  System 2, Task 2
-  How old do you have to be to get a Global ID?
-
-  Please enter the minimum age into the field below.
-
-  The information is located on the home page.
-
-  Please do not use any search feature.
-
-TASK6_WEBSITE_URL: https://www.figma.com/proto/YKdIZwG4EU66VC1xPafjlH/ICID-state_of_the_art-Austria-3col-V0.1?node-id=1-75&node-type=canvas&t=ovyGNK3S6JhSBdfy-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A75&hide-ui=1
-
-TASK6_QUESTION_TEXT: Minimum age to join Global ID
+    Please do not use any search feature.
+  WEBSITE_URL: https://www.figma.com/proto/YKdIZwG4EU66VC1xPafjlH/ICID-state_of_the_art-Austria-3col-V0.1?node-id=1-75&node-type=canvas&t=ovyGNK3S6JhSBdfy-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A75&hide-ui=1
+  QUESTION: Minimum age to join Global ID
 
 TASK_START_TEXT: Start the task.
+
+QUESTION_BUTTON_TEXT: Enter
 
 POST_EXPERIMENT_TEXT: |
   We have reached the end of the usability test.

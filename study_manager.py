@@ -29,6 +29,7 @@ class StudyManager():
             self.driver.find_element(By.NAME, "username").send_keys(username)
             self.driver.find_element(By.NAME, "password").send_keys(password)
             self.driver.find_element(By.NAME, "action").click()
+            time.sleep(1)
 
         except NoSuchElementException:
             # Username field not found — probably already logged in
