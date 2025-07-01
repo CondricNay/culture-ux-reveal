@@ -1,14 +1,38 @@
 {
   "task_order": [
-    "TASK4_TEXT",
-    "TASK6_TEXT",
-    "TASK1_TEXT",
-    "TASK2_TEXT"
+    {
+      "TEXT": "TASK2_TEXT",
+      "WEBSITE_URL": "TASK2_WEBSITE_URL"
+    },
+    {
+      "TEXT": "TASK4_TEXT",
+      "WEBSITE_URL": "TASK4_WEBSITE_URL"
+    },
+    {
+      "TEXT": "TASK6_TEXT",
+      "WEBSITE_URL": "TASK6_WEBSITE_URL"
+    },
+    {
+      "TEXT": "TASK1_TEXT",
+      "WEBSITE_URL": "TASK1_WEBSITE_URL"
+    }
   ],
   "task_order_jp": [
-    "TASK4_TEXT",
-    "TASK6_TEXT",
-    "TASK1_TEXT",
-    "TASK2_TEXT"
+    {
+      "TEXT": "TASK2_TEXT",
+      "WEBSITE_URL": "TASK2_WEBSITE_URL"
+    },
+    {
+      "TEXT": "TASK4_TEXT",
+      "WEBSITE_URL": "TASK4_WEBSITE_URL"
+    },
+    {
+      "TEXT": "TASK6_TEXT",
+      "WEBSITE_URL": "TASK6_WEBSITE_URL"
+    },
+    {
+      "TEXT": "TASK1_TEXT",
+      "WEBSITE_URL": "TASK1_WEBSITE_URL"
+    }
   ]
 }

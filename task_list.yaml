@@ -1,7 +1,5 @@
 STUDY_NAME: Culture UX Study
 
-WEBSITE_URL: "https://www.figma.com/proto/tSeCgY5BvAH9BGH9HbXcKn/ICID-state_of_the_art-Austria-V0.1?node-id=1-75&starting-point-node-id=1%3A75&disable-default-keyboard-nav=1&device-frame=0&scaling=min-zoom&hide-ui=1"
-
 PRE_EXPERIMENT_TEXT: |
   Read this before you start the experiment:
 
@@ -33,6 +31,8 @@ TASK1_TEXT: |
 
   Please do not use any search feature.
 
+TASK1_WEBSITE_URL: https://www.figma.com/proto/q5wKb0RkMaWBuJiOi6zWsz/ICID-state_of_the_art-Austria-V0.1-Task_LAP?t=zsg3rl4Hu10Ynd3L-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&node-id=1-75&starting-point-node-id=1%3A75&hide-ui=1
+
 TASK2_TEXT: |
   System 1, Task 2
   How much does it cost to use Global ID?
@@ -43,6 +43,8 @@ TASK2_TEXT: |
 
   Please do not use any search feature.
 
+TASK2_WEBSITE_URL: https://www.figma.com/proto/tSeCgY5BvAH9BGH9HbXcKn/ICID-state_of_the_art-Austria-V0.1?node-id=1-75&node-type=canvas&t=LrffAWufeJaZKZyO-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A75&hide-ui=1
+
 TASK4_TEXT: |
   System 2, Task 1
   Open the “Application Status Inquiry Service” (webpage to check the status of your Global ID application).
@@ -50,6 +52,8 @@ TASK4_TEXT: |
   As soon as you see the green success page, your task is complete.
 
   Please do not use any search feature.
+
+TASK4_WEBSITE_URL: https://www.figma.com/proto/BJdSnhD42OwTMkuUSTneHx/ICID-state_of_the_art-Austria-3col-V0.1-Task_ASIS?node-id=1-75&node-type=canvas&t=jg7RlIHXGu39qW0N-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A75&hide-ui=1
 
 TASK6_TEXT: |
   System 2, Task 2
@@ -61,10 +65,12 @@ TASK6_TEXT: |
 
   Please do not use any search feature.
 
+TASK6_WEBSITE_URL: https://www.figma.com/proto/YKdIZwG4EU66VC1xPafjlH/ICID-state_of_the_art-Austria-3col-V0.1?node-id=1-75&node-type=canvas&t=ovyGNK3S6JhSBdfy-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A75&hide-ui=1
+
 TASK_START_TEXT: Start the task.
 
 POST_EXPERIMENT_TEXT: |
   We have reached the end of the usability test.
   Thank you so much for participating helping us make technology more accessible to everyone.
 
-POST_EXPERIMENT_BUTTON: Finish the test.
+POST_EXPERIMENT_BUTTON_TEXT: Finish the test.

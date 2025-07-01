@@ -1,7 +1,5 @@
 STUDY_NAME: Culture UX Study
 
-WEBSITE_URL: "https://www.figma.com/proto/tSeCgY5BvAH9BGH9HbXcKn/ICID-state_of_the_art-Austria-V0.1?node-id=1-75&starting-point-node-id=1%3A75&disable-default-keyboard-nav=1&device-frame=0&scaling=min-zoom&hide-ui=1"
-
 PRE_EXPERIMENT_TEXT: |
   実験を開始する前に、以下をお読みください：
 
@@ -33,6 +31,8 @@ TASK1_TEXT: |
 
   検索機能は使用しないでください。
 
+TASK1_WEBSITE_URL: https://www.figma.com/proto/BJdSnhD42OwTMkuUSTneHx/ICID-state_of_the_art-Austria-3col-V0.1-Task_ASIS?node-id=1-75&node-type=canvas&t=jg7RlIHXGu39qW0N-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A75&hide-ui=1
+
 TASK2_TEXT: |
   システム 1、タスク 2
   Global ID を取得するには何歳以上である必要がありますか?
@@ -42,6 +42,8 @@ TASK2_TEXT: |
   情報はホームページに掲載されています。
 
   検索機能は使用しないでください。
+
+TASK2_WEBSITE_URL: https://www.figma.com/proto/YKdIZwG4EU66VC1xPafjlH/ICID-state_of_the_art-Austria-3col-V0.1?node-id=1-75&node-type=canvas&t=ovyGNK3S6JhSBdfy-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A75&hide-ui=1
 
 TASK4_TEXT: |
   システム 2、タスク 1
@@ -53,6 +55,8 @@ TASK4_TEXT: |
 
   検索機能は使用しないでください。
 
+TASK4_WEBSITE_URL: https://www.figma.com/proto/tSeCgY5BvAH9BGH9HbXcKn/ICID-state_of_the_art-Austria-V0.1?node-id=1-75&node-type=canvas&t=LrffAWufeJaZKZyO-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A75&hide-ui=1
+
 TASK6_TEXT: |
   システム 2、タスク 2
   「Find Local Authority」ページを開きます。
@@ -60,6 +64,8 @@ TASK6_TEXT: |
   緑色の成功ページが表示されたら、タスクは完了です。
 
   検索機能は使用しないでください。
+
+TASK6_WEBSITE_URL: https://www.figma.com/proto/q5wKb0RkMaWBuJiOi6zWsz/ICID-state_of_the_art-Austria-V0.1-Task_LAP?t=zsg3rl4Hu10Ynd3L-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&node-id=1-75&starting-point-node-id=1%3A75&hide-ui=1
 
 TASK_START_TEXT: タスクを開始する。
 

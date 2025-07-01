@@ -3,7 +3,6 @@ import yaml
 from task_actions import AddTextTask, AddWebTask
 
 # TODO fix the headings (eg. system 1 task 1) to not be randomized
-# TODO fix figma to have 2 versions (2 systems)
 # TODO add questions after each figma
 # TODO cleanup this function
 def build_task_pipeline(used_order="task_order"):
@@ -18,7 +17,7 @@ def build_task_pipeline(used_order="task_order"):
 
     # Save updated task order back to JSON
     with open("task_order.json", "w", encoding="utf-8") as f:
-        json.dump(data, f, indent=2)
+        json.dump(data, f, indent=2, ensure_ascii=False)
 
     if used_order == "task_order_jp":
         task_list_yaml = "task_list_jp.yaml"
@@ -35,15 +34,21 @@ def build_task_pipeline(used_order="task_order"):
         AddTextTask(TASK_LIST["INTRODUCTION_TEXT"], TASK_LIST["INTRODUCTION_BUTTON_TEXT"]),
     ]
 
-    website_url = TASK_LIST["WEBSITE_URL"]
+    # Build tasks from the task_order list of dicts
+    for task in task_order:
+        text_key = task["TEXT"]
+        url_key = task["WEBSITE_URL"]
 
-    for name in task_order:
-        task_pipeline.append(AddTextTask(TASK_LIST[name], TASK_LIST["TASK_START_TEXT"]))
-        task_pipeline.append(AddWebTask(website_url))
+        task_text = TASK_LIST[text_key]
+        task_url = TASK_LIST[url_key]
+
+        task_pipeline.append(AddTextTask(task_text, TASK_LIST["TASK_START_TEXT"]))
+        task_pipeline.append(AddWebTask(task_url))
 
     task_pipeline.append(AddTextTask(TASK_LIST["POST_EXPERIMENT_TEXT"], TASK_LIST["POST_EXPERIMENT_BUTTON_TEXT"]))
 
     return task_pipeline
+
 
 def build_task_pipeline_japanese():
     return build_task_pipeline("task_order_jp")
