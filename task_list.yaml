@@ -45,6 +45,10 @@ TASK2_TEXT: |
 
 TASK2_WEBSITE_URL: https://www.figma.com/proto/tSeCgY5BvAH9BGH9HbXcKn/ICID-state_of_the_art-Austria-V0.1?node-id=1-75&node-type=canvas&t=LrffAWufeJaZKZyO-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A75&hide-ui=1
 
+TASK2_QUESTION_TEXT: Euro per month to use Global ID
+
+QUESTION_BUTTON_TEXT: Enter
+
 TASK4_TEXT: |
   System 2, Task 1
   Open the “Application Status Inquiry Service” (webpage to check the status of your Global ID application).
@@ -66,6 +70,8 @@ TASK6_TEXT: |
   Please do not use any search feature.
 
 TASK6_WEBSITE_URL: https://www.figma.com/proto/YKdIZwG4EU66VC1xPafjlH/ICID-state_of_the_art-Austria-3col-V0.1?node-id=1-75&node-type=canvas&t=ovyGNK3S6JhSBdfy-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A75&hide-ui=1
+
+TASK6_QUESTION_TEXT: Minimum age to join Global ID
 
 TASK_START_TEXT: Start the task.
 

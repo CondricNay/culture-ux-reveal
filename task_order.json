@@ -2,7 +2,8 @@
   "task_order": [
     {
       "TEXT": "TASK2_TEXT",
-      "WEBSITE_URL": "TASK2_WEBSITE_URL"
+      "WEBSITE_URL": "TASK2_WEBSITE_URL",
+      "QUESTION": "TASK2_QUESTION_TEXT"
     },
     {
       "TEXT": "TASK4_TEXT",
@@ -10,7 +11,8 @@
     },
     {
       "TEXT": "TASK6_TEXT",
-      "WEBSITE_URL": "TASK6_WEBSITE_URL"
+      "WEBSITE_URL": "TASK6_WEBSITE_URL",
+      "QUESTION": "TASK6_QUESTION_TEXT"
     },
     {
       "TEXT": "TASK1_TEXT",
@@ -19,20 +21,22 @@
   ],
   "task_order_jp": [
     {
-      "TEXT": "TASK2_TEXT",
-      "WEBSITE_URL": "TASK2_WEBSITE_URL"
-    },
-    {
-      "TEXT": "TASK4_TEXT",
-      "WEBSITE_URL": "TASK4_WEBSITE_URL"
-    },
-    {
       "TEXT": "TASK6_TEXT",
       "WEBSITE_URL": "TASK6_WEBSITE_URL"
     },
     {
       "TEXT": "TASK1_TEXT",
       "WEBSITE_URL": "TASK1_WEBSITE_URL"
+    },
+    {
+      "TEXT": "TASK2_TEXT",
+      "WEBSITE_URL": "TASK2_WEBSITE_URL",
+      "QUESTION": "TASK2_QUESTION_TEXT"
+    },
+    {
+      "TEXT": "TASK4_TEXT",
+      "WEBSITE_URL": "TASK4_WEBSITE_URL",
+      "QUESTION": "TASK4_QUESTION_TEXT"
     }
   ]
 }

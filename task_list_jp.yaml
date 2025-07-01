@@ -45,6 +45,10 @@ TASK2_TEXT: |
 
 TASK2_WEBSITE_URL: https://www.figma.com/proto/YKdIZwG4EU66VC1xPafjlH/ICID-state_of_the_art-Austria-3col-V0.1?node-id=1-75&node-type=canvas&t=ovyGNK3S6JhSBdfy-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A75&hide-ui=1
 
+TASK2_QUESTION_TEXT: Global ID に参加できる最低年齢
+
+QUESTION_BUTTON_TEXT: 入力
+
 TASK4_TEXT: |
   システム 2、タスク 1
   Global ID の使用にはいくらかかりますか?
@@ -56,6 +60,8 @@ TASK4_TEXT: |
   検索機能は使用しないでください。
 
 TASK4_WEBSITE_URL: https://www.figma.com/proto/tSeCgY5BvAH9BGH9HbXcKn/ICID-state_of_the_art-Austria-V0.1?node-id=1-75&node-type=canvas&t=LrffAWufeJaZKZyO-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A75&hide-ui=1
+
+TASK4_QUESTION_TEXT: Global ID の使用にかかる月額ユーロ
 
 TASK6_TEXT: |
   システム 2、タスク 2
