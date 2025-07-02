@@ -1,56 +1,63 @@
-import json
+import random
 import yaml
 from task_actions import AddTextTask, AddWebTask, AddQuestionTask
 
-def get_task_order_latin_square():
-    pass
+shuffled_indices_en = []
+shuffled_indices_jp = []
 
-# TODO fix the headings (eg. system 1 task 1) to not be randomized
-# TODO cleanup this function
 def build_task_pipeline(used_order="task_order"):
-    # Load task order JSON
-    with open("task_order.json", "r", encoding="utf-8") as f:
-        data = json.load(f)
-        task_order = data[used_order]
+    global shuffled_indices_en, shuffled_indices_jp
 
-    # Rotate the task list
-    task_order = task_order[1:] + task_order[:1]
-    data[used_order] = task_order  # update only the selected list
+    # === Load Latin square task order ===
+    with open("task_order.yaml", "r", encoding="utf-8") as f:
+        latin_square_result = yaml.safe_load(f)["latin_square_task_order"]
 
-    # Save updated task order back to JSON
-    with open("task_order.json", "w", encoding="utf-8") as f:
-        json.dump(data, f, indent=2, ensure_ascii=False)
-
+    # === Choose task list ===
     if used_order == "task_order_jp":
-        task_list_yaml = "task_list_jp.yaml"
+        task_list_file = "task_list_jp.yaml"
+        pool = shuffled_indices_jp
     else:
-        task_list_yaml = "task_list.yaml"
+        task_list_file = "task_list.yaml"
+        pool = shuffled_indices_en
 
-    # Load task list YAML
-    with open(task_list_yaml, "r", encoding="utf-8") as f:
-        TASK_LIST = yaml.safe_load(f)
+    with open(task_list_file, "r", encoding="utf-8") as f:
+        data = yaml.safe_load(f)
 
-    # Build pipeline
-    task_pipeline = [
-        AddTextTask(TASK_LIST["PRE_EXPERIMENT_TEXT"], TASK_LIST["PRE_EXPERIMENT_BUTTON_TEXT"]),
-        AddTextTask(TASK_LIST["INTRODUCTION_TEXT"], TASK_LIST["INTRODUCTION_BUTTON_TEXT"]),
+    task_map = data["TASK_MAP"]
+
+    # === Draw a row index (random, without replacement) ===
+    if not pool:
+        pool.extend(random.sample(range(len(latin_square_result)), len(latin_square_result)))
+
+    row_idx = pool.pop()
+    selected_labels = latin_square_result[row_idx]
+
+    print(f"[INFO] Using row index: {row_idx}")
+    print(f"[INFO] Task labels: {selected_labels}")
+    print(f"[INFO] Remaining in pool ({'JP' if used_order == 'task_order_jp' else 'EN'}): {pool}")
+
+    pipeline = [
+        AddTextTask(data["PRE_EXPERIMENT_TEXT"], data["PRE_EXPERIMENT_BUTTON_TEXT"]),
+        AddTextTask(data["INTRODUCTION_TEXT"], data["INTRODUCTION_BUTTON_TEXT"])
     ]
 
-    # Build tasks from the task_order list of dicts
-    for task_id in task_order:
-        task_data = TASK_LIST[task_id]
+    for label in selected_labels:
+        version = label[0]      # 'A' or 'B'
+        task_num = label[1:]    # '1', '2', etc.
+        task_key = f"TASK{task_num}"
 
-        task_pipeline.append(AddTextTask(task_data["TEXT"], TASK_LIST["TASK_START_TEXT"]))
-        task_pipeline.append(AddWebTask(task_data["WEBSITE_URL"]))
+        if task_key not in task_map:
+            raise KeyError(f"Missing task: {task_key}")
 
-        if "QUESTION" in task_data:
-            task_pipeline.append(AddQuestionTask(task_data["QUESTION"], TASK_LIST["QUESTION_BUTTON_TEXT"]))
+        task = task_map[task_key]
+        pipeline.append(AddTextTask(task["TASK_TEXT"], data["TASK_START_TEXT"]))
+        pipeline.append(AddWebTask(task["FIGMA_URL"][f"VERSION_{version}"]))
 
+        if "QUESTION" in task:
+            pipeline.append(AddQuestionTask(task["QUESTION"], data["QUESTION_BUTTON_TEXT"]))
 
-    task_pipeline.append(AddTextTask(TASK_LIST["POST_EXPERIMENT_TEXT"], TASK_LIST["POST_EXPERIMENT_BUTTON_TEXT"]))
-
-    return task_pipeline
-
+    pipeline.append(AddTextTask(data["POST_EXPERIMENT_TEXT"], data["POST_EXPERIMENT_BUTTON_TEXT"]))
+    return pipeline
 
 def build_task_pipeline_japanese():
     return build_task_pipeline("task_order_jp")

@@ -23,52 +23,6 @@ INTRODUCTION_TEXT: |
 
 INTRODUCTION_BUTTON_TEXT: 次へ
 
-TASK1:
-  TEXT: |
-    システム 1、タスク 1
-    「Application Status Inquiry Service」(Global ID申請の状況を確認するためのウェブページ) を開きます。
-
-    緑色の成功ページが表示されたら、タスクは完了です。
-
-    検索機能は使用しないでください。
-  WEBSITE_URL: https://www.figma.com/proto/BJdSnhD42OwTMkuUSTneHx/ICID-state_of_the_art-Austria-3col-V0.1-Task_ASIS?node-id=1-75&node-type=canvas&t=jg7RlIHXGu39qW0N-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A75&hide-ui=1
-
-TASK2:
-  TEXT: |
-    システム 1、タスク 2
-    Global ID を取得するには何歳以上である必要がありますか?
-
-    下の欄に最低年齢を入力してください。
-
-    情報はホームページに掲載されています。
-
-    検索機能は使用しないでください。
-  WEBSITE_URL: https://www.figma.com/proto/YKdIZwG4EU66VC1xPafjlH/ICID-state_of_the_art-Austria-3col-V0.1?node-id=1-75&node-type=canvas&t=ovyGNK3S6JhSBdfy-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A75&hide-ui=1
-  QUESTION: Global ID に参加できる最低年齢
-
-TASK4:
-  TEXT: |
-    システム 2、タスク 1
-    Global ID の使用にはいくらかかりますか?
-
-    下のフィールドに金額を数字で入力してください。
-
-    情報はホームページに掲載されています。
-
-    検索機能は使用しないでください。
-  WEBSITE_URL: https://www.figma.com/proto/tSeCgY5BvAH9BGH9HbXcKn/ICID-state_of_the_art-Austria-V0.1?node-id=1-75&node-type=canvas&t=LrffAWufeJaZKZyO-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A75&hide-ui=1
-  QUESTION: Global ID の使用にかかる月額ユーロ
-
-TASK6:
-  TEXT: |
-    システム 2、タスク 2
-    「Find Local Authority」ページを開きます。
-
-    緑色の成功ページが表示されたら、タスクは完了です。
-
-    検索機能は使用しないでください。
-  WEBSITE_URL: https://www.figma.com/proto/q5wKb0RkMaWBuJiOi6zWsz/ICID-state_of_the_art-Austria-V0.1-Task_LAP?t=zsg3rl4Hu10Ynd3L-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&node-id=1-75&starting-point-node-id=1%3A75&hide-ui=1
-
 TASK_START_TEXT: タスクを開始する。
 
 QUESTION_BUTTON_TEXT: 入力
@@ -77,3 +31,59 @@ POST_EXPERIMENT_TEXT: |
   ユーザビリティ テストは終了しました。テクノロジーを誰もがより利用しやすいものにするためにご協力いただき、誠にありがとうございました。
 
 POST_EXPERIMENT_BUTTON_TEXT: 終了。
+
+TASK_MAP:
+  TASK1:
+    FIGMA_URL:
+      VERSION_A: "https://www.figma.com/proto/tSeCgY5BvAH9BGH9HbXcKn/ICID-state_of_the_art-Austria-V0.1?node-id=1-75&node-type=canvas&t=LrffAWufeJaZKZyO-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A75&hide-ui=1"
+      VERSION_B: "https://www.figma.com/proto/YKdIZwG4EU66VC1xPafjlH/ICID-state_of_the_art-Austria-3col-V0.1?node-id=1-75&node-type=canvas&t=ovyGNK3S6JhSBdfy-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A75&hide-ui=1"
+    TASK_TEXT: |
+      システム 1、タスク 2
+      Global ID を取得するには何歳以上である必要がありますか?
+
+      下の欄に最低年齢を入力してください。
+
+      情報はホームページに掲載されています。
+
+      検索機能は使用しないでください。
+    QUESTION: Global ID に参加できる最低年齢
+
+  TASK2:
+    FIGMA_URL:
+      VERSION_A: "https://www.figma.com/proto/tSeCgY5BvAH9BGH9HbXcKn/ICID-state_of_the_art-Austria-V0.1?node-id=1-75&node-type=canvas&t=LrffAWufeJaZKZyO-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A75&hide-ui=1"
+      VERSION_B: "https://www.figma.com/proto/YKdIZwG4EU66VC1xPafjlH/ICID-state_of_the_art-Austria-3col-V0.1?node-id=1-75&node-type=canvas&t=ovyGNK3S6JhSBdfy-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A75&hide-ui=1"
+    TASK_TEXT: |
+      システム 2、タスク 1
+      Global ID の使用にはいくらかかりますか?
+
+      下のフィールドに金額を数字で入力してください。
+
+      情報はホームページに掲載されています。
+
+      検索機能は使用しないでください。
+
+    QUESTION: Global ID の使用にかかる月額ユーロ
+
+  TASK4:
+    FIGMA_URL:
+      VERSION_A: "https://www.figma.com/proto/He1W0g9V9RQqb1AGSz0rD8/ICID-state_of_the_art-Austria-V0.1-Task_ASIS?t=5bfW35SMXocH65RC-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&node-id=1-75&starting-point-node-id=1%3A75&hide-ui=1"
+      VERSION_B: "https://www.figma.com/proto/BJdSnhD42OwTMkuUSTneHx/ICID-state_of_the_art-Austria-3col-V0.1-Task_ASIS?node-id=1-75&node-type=canvas&t=jg7RlIHXGu39qW0N-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A75&hide-ui=1"
+    TASK_TEXT: |      
+      システム 1、タスク 1
+      「Application Status Inquiry Service」(Global ID申請の状況を確認するためのウェブページ) を開きます。
+
+      緑色の成功ページが表示されたら、タスクは完了です。
+
+      検索機能は使用しないでください。
+
+  TASK6:
+    FIGMA_URL:
+      VERSION_A: "https://www.figma.com/proto/q5wKb0RkMaWBuJiOi6zWsz/ICID-state_of_the_art-Austria-V0.1-Task_LAP?t=zsg3rl4Hu10Ynd3L-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&node-id=1-75&starting-point-node-id=1%3A75&hide-ui=1"
+      VERSION_B: "https://www.figma.com/proto/xBP0OgetGdHnvF2m3iRoKJ/ICID-state_of_the_art-Austria-3col-V0.1-Task_LAP?t=CgthD6CtTKRi1r6U-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&node-id=1-75&starting-point-node-id=1%3A75&hide-ui=1"
+    TASK_TEXT: |
+      システム 2、タスク 2
+      「Find Local Authority」ページを開きます。
+
+      緑色の成功ページが表示されたら、タスクは完了です。
+
+      検索機能は使用しないでください。
