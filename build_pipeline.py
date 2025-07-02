@@ -1,35 +1,46 @@
 import random
 import yaml
+import os
 from task_actions import AddTextTask, AddWebTask, AddQuestionTask
 
-shuffled_indices_en = []
-shuffled_indices_jp = []
+def save_shuffle(filename, data):
+    with open(filename, "w", encoding="utf-8") as f:
+        yaml.safe_dump(data, f)
 
+def load_shuffle(filename):
+    if os.path.exists(filename):
+        with open(filename, "r", encoding="utf-8") as f:
+            data = yaml.safe_load(f)
+            if data:
+                return data
+    return None
+
+
+# TODO fix title (System 1 & 2 to not be shuffled)
 def build_task_pipeline(used_order="task_order"):
-    global shuffled_indices_en, shuffled_indices_jp
-
-    # === Load Latin square task order ===
     with open("task_order.yaml", "r", encoding="utf-8") as f:
         latin_square_result = yaml.safe_load(f)["latin_square_task_order"]
 
-    # === Choose task list ===
     if used_order == "task_order_jp":
         task_list_file = "task_list_jp.yaml"
-        pool = shuffled_indices_jp
+        shuffle_file = "shuffled_order_jp.yaml"
     else:
         task_list_file = "task_list.yaml"
-        pool = shuffled_indices_en
+        shuffle_file = "shuffled_order_en.yaml"
 
     with open(task_list_file, "r", encoding="utf-8") as f:
         data = yaml.safe_load(f)
 
     task_map = data["TASK_MAP"]
 
-    # === Draw a row index (random, without replacement) ===
+    pool = load_shuffle(shuffle_file)
     if not pool:
-        pool.extend(random.sample(range(len(latin_square_result)), len(latin_square_result)))
+        pool = random.sample(range(len(latin_square_result)), len(latin_square_result))
+        save_shuffle(shuffle_file, pool)
 
     row_idx = pool.pop()
+    save_shuffle(shuffle_file, pool)
+
     selected_labels = latin_square_result[row_idx]
 
     print(f"[INFO] Using row index: {row_idx}")
@@ -42,8 +53,8 @@ def build_task_pipeline(used_order="task_order"):
     ]
 
     for label in selected_labels:
-        version = label[0]      # 'A' or 'B'
-        task_num = label[1:]    # '1', '2', etc.
+        version = label[0]
+        task_num = label[1:]
         task_key = f"TASK{task_num}"
 
         if task_key not in task_map:

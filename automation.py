@@ -13,7 +13,7 @@ study_manager = StudyManager(driver)
 
 # study_manager.delete_recent_study()
 study_manager.create_study()
-task_pipeline = build_task_pipeline()
+task_pipeline = build_task_pipeline_japanese()
 study_manager.edit_recent_study(task_pipeline)
 # study_manager.start_new_data_collection()
 
