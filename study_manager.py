@@ -59,23 +59,32 @@ class StudyManager():
     # TODO add delete by id
     def delete_recent_study(self):
         """
-        Pre-condition: the study exists
+        Deletes the most recent study from the 'open' or 'active' studies page.
+        Pre-condition: At least one study exists.
         """
-        self.open_website("https://uxreveal.tobii.com/en/studies/open")
-        time.sleep(1)
+        urls = [
+            "https://uxreveal.tobii.com/en/studies/open",
+            "https://uxreveal.tobii.com/en/studies/active"
+        ]
 
-        try:
-            delete_old_study_button = self.driver.find_element(By.CSS_SELECTOR, 'div.modalButton.btn-delete')
-            delete_old_study_button.click()
+        for url in urls:
+            try:
+                self.open_website(url)
+                time.sleep(1)
 
-            time.sleep(1)
+                delete_button = self.driver.find_element(By.CSS_SELECTOR, 'div.modalButton.btn-delete')
+                delete_button.click()
+                time.sleep(1)
 
-            delete_old_study_confirm_button = self.driver.find_element(By.ID, 'modal-button')
-            delete_old_study_confirm_button.click()
+                confirm_button = self.driver.find_element(By.ID, 'modal-button')
+                confirm_button.click()
+                return  # Deleted successfully
 
-        except NoSuchElementException:
-            print("Error: Can't delete study.")
-            sys.exit()
+            except NoSuchElementException:
+                continue  # Try next URL
+
+        print("Error: No deletable study found.")
+        sys.exit()
     
     # TODO add edit by id
     # TODO also check the edit button in "https://uxreveal.tobii.com/en/studies/active" if this doesn't work
