@@ -39,7 +39,6 @@ TASK_MAP:
       VERSION_A: "https://www.figma.com/proto/tSeCgY5BvAH9BGH9HbXcKn/ICID-state_of_the_art-Austria-V0.1?node-id=1-75&node-type=canvas&t=LrffAWufeJaZKZyO-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A75&hide-ui=1"
       VERSION_B: "https://www.figma.com/proto/YKdIZwG4EU66VC1xPafjlH/ICID-state_of_the_art-Austria-3col-V0.1?node-id=1-75&node-type=canvas&t=ovyGNK3S6JhSBdfy-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A75&hide-ui=1"
     TASK_TEXT: |
-      System 1, Task 1
       How old do you have to be to get a Global ID?
 
       Please enter the minimum age into the field below.
@@ -54,7 +53,6 @@ TASK_MAP:
       VERSION_A: "https://www.figma.com/proto/tSeCgY5BvAH9BGH9HbXcKn/ICID-state_of_the_art-Austria-V0.1?node-id=1-75&node-type=canvas&t=LrffAWufeJaZKZyO-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A75&hide-ui=1"
       VERSION_B: "https://www.figma.com/proto/YKdIZwG4EU66VC1xPafjlH/ICID-state_of_the_art-Austria-3col-V0.1?node-id=1-75&node-type=canvas&t=ovyGNK3S6JhSBdfy-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A75&hide-ui=1"
     TASK_TEXT: |
-      System 1, Task 2
       How much does it cost to use Global ID?
 
       Enter the amount as number into the field below.
@@ -69,7 +67,6 @@ TASK_MAP:
       VERSION_A: "https://www.figma.com/proto/He1W0g9V9RQqb1AGSz0rD8/ICID-state_of_the_art-Austria-V0.1-Task_ASIS?t=5bfW35SMXocH65RC-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&node-id=1-75&starting-point-node-id=1%3A75&hide-ui=1"
       VERSION_B: "https://www.figma.com/proto/BJdSnhD42OwTMkuUSTneHx/ICID-state_of_the_art-Austria-3col-V0.1-Task_ASIS?node-id=1-75&node-type=canvas&t=jg7RlIHXGu39qW0N-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A75&hide-ui=1"
     TASK_TEXT: |
-      System 2, Task 1
       Open the “Application Status Inquiry Service” (webpage to check the status of your Global ID application).
 
       As soon as you see the green success page, your task is complete.
@@ -81,7 +78,6 @@ TASK_MAP:
       VERSION_A: "https://www.figma.com/proto/q5wKb0RkMaWBuJiOi6zWsz/ICID-state_of_the_art-Austria-V0.1-Task_LAP?t=zsg3rl4Hu10Ynd3L-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&node-id=1-75&starting-point-node-id=1%3A75&hide-ui=1"
       VERSION_B: "https://www.figma.com/proto/xBP0OgetGdHnvF2m3iRoKJ/ICID-state_of_the_art-Austria-3col-V0.1-Task_LAP?t=CgthD6CtTKRi1r6U-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&node-id=1-75&starting-point-node-id=1%3A75&hide-ui=1"
     TASK_TEXT: |
-      System 2, Task 2
       Open the “Find Local Authority” page.
 
       As soon as you see the green success page, your task is complete.
