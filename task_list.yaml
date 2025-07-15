@@ -1,13 +1,16 @@
-STUDY_NAME: Culture UX Study
+STUDY_NAME: Culture UX Study English
 
 PRE_EXPERIMENT_TEXT: |
-  Read this before you start the experiment:
+  Please read the following before starting the experiment:
 
-  1) Please restart the experiment if the calibration level is 0%.
+  1) If the calibration level is 0%, please restart the experiment.
 
-  2) When you completed the task, press "Esc" to continue to the next task.
+  2) When you complete the task, press the "Esc" key to proceed to the next task.
 
-  3) Don't close your eyes/look away for too long during the experiment, the eye tracker might not recognize your pupils.
+  3) Do not close your eyes or look away for too long during the experiment, as the eye tracker may not recognize your pupils.
+
+  4) If you encounter any problems (e.g., forgetting the task, being unable to perform the task, etc.), press the "Esc" key and call the experiment operator.
+
 
 PRE_EXPERIMENT_BUTTON_TEXT: I understood
 
